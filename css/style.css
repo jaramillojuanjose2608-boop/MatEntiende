@@ -43,6 +43,13 @@ header {
     position: relative;
 }
 
+header img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
 header h1 {
     color: #4652d9;
     font-size: 17px;
@@ -78,16 +85,6 @@ fieldset {
     border: none;
     margin: 0;
     padding: 0;
-}
-
-legend {
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #111111;
-}
-
-fieldset {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 9px;
@@ -95,6 +92,10 @@ fieldset {
 
 legend {
     grid-column: 1 / -1;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111111;
 }
 
 fieldset button {
@@ -220,5 +221,10 @@ form > button:hover {
 
     main > section:first-of-type h2 {
         font-size: 24px;
+    }
+
+    header img {
+        width: 38px;
+        height: 38px;
     }
 }
