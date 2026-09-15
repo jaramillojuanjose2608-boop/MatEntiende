@@ -125,17 +125,6 @@ fieldset button:hover {
     box-shadow: 0 5px 12px rgba(92, 94, 232, 0.25);
 }
 
-fieldset button:first-of-type {
-    background: #5c5ee8;
-    border-color: #5c5ee8;
-    color: white;
-}
-
-fieldset button:first-of-type:hover {
-    background: #4648c9;
-    border-color: #4648c9;
-}
-
 fieldset button span:first-child {
     font-size: 21px;
     line-height: 18px;
