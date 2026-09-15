@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mat Entiende</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Mat Entiende</h1>
+
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Hola Mateo.</h2>
+            <p>¿qué vamos a resolver hoy?</p>
+        </section>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Tipo de operación</legend>
+
+                <button type="button" name="operacion" value="suma">
+                    <span>＋</span>
+                    <span>Suma</span>
+                </button>
+
+                <button type="button" name="operacion" value="resta">
+                    <span>−</span>
+                    <span>Resta</span>
+                </button>
+
+                <button type="button" name="operacion" value="multiplicacion">
+                    <span>×</span>
+                    <span>Multiplicación</span>
+                </button>
+
+                <button type="button" name="operacion" value="division">
+                    <span>％</span>
+                    <span>División</span>
+                </button>
+
+            </fieldset>
+
+            <section>
+
+                <div>
+                    <label for="numero1">
+                        Número 1
+                    </label>
+
+                    <input
+                        type="number"
+                        id="numero1"
+                        name="numero1"
+                        value="0"
+                    >
+                </div>
+
+                <div>
+                    <label for="numero2">
+                        Número 2
+                    </label>
+
+                    <input
+                        type="number"
+                        id="numero2"
+                        name="numero2"
+                        value="0"
+                    >
+                </div>
+
+            </section>
+
+            <div>
+                <label for="fecha">
+                    Fecha de consulta
+                </label>
+
+                <input
+                    type="date"
+                    id="fecha"
+                    name="fecha"
+                    value="2026-09-08"
+                >
+            </div>
+
+            <button type="submit">
+                ✓ Resolver ejercicio
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
