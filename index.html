@@ -10,17 +10,16 @@
 
 <body>
 
-    <header>
-
-        <h1>Mat Entiende</h1>
-        <img src="img/logomat.png" alt="Logo de Mat Entiende">
-    </header>
-
     <main>
 
-        <section>
+        <header>
+            <img src="img/logo.png" alt="Logo de Mat Entiende">
+            <h1>Mat Entiende</h1>
+        </header>
+
+        <section class="bienvenida">
             <h2>Hola Mateo.</h2>
-            <p>¿qué vamos a resolver hoy?</p>
+            <p>¿Qué vamos a resolver hoy?</p>
         </section>
 
         <form action="#" method="post">
@@ -44,18 +43,16 @@
                 </button>
 
                 <button type="button" name="operacion" value="division">
-                    <span>％</span>
+                    <span>÷</span>
                     <span>División</span>
                 </button>
 
             </fieldset>
 
-            <section>
+            <section class="numeros">
 
                 <div>
-                    <label for="numero1">
-                        Número 1
-                    </label>
+                    <label for="numero1">Número 1</label>
 
                     <input
                         type="number"
@@ -66,9 +63,7 @@
                 </div>
 
                 <div>
-                    <label for="numero2">
-                        Número 2
-                    </label>
+                    <label for="numero2">Número 2</label>
 
                     <input
                         type="number"
@@ -81,20 +76,18 @@
             </section>
 
             <div>
-                <label for="fecha">
-                    Fecha de consulta
-                </label>
+                <label for="fecha">Fecha de consulta</label>
 
                 <input
                     type="date"
                     id="fecha"
                     name="fecha"
-                    value="2026-09-08"
+                    value="2026-09-15"
                 >
             </div>
 
             <button type="submit">
-                ✓ Resolver ejercicio Matematico
+                ✓ Resolver ejercicio
             </button>
 
         </form>

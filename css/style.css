@@ -36,39 +36,43 @@ main {
 }
 
 header {
-    height: 55px;
+    width: 100%;
+    height: 90px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 11px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 header img {
-    width: 42px;
-    height: 42px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 header h1 {
     color: #4652d9;
-    font-size: 17px;
+    font-size: 24px;
     font-weight: bold;
 }
 
-main > section:first-of-type {
+.bienvenida {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 35px;
     margin-bottom: 38px;
 }
 
-main > section:first-of-type h2 {
+.bienvenida h2 {
     color: #4652d9;
     font-size: 27px;
     margin-bottom: 10px;
 }
 
-main > section:first-of-type p {
+.bienvenida p {
     color: #202020;
     font-size: 15px;
 }
@@ -127,14 +131,14 @@ fieldset button span:last-child {
     font-size: 10px;
 }
 
-form > section {
+.numeros {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 19px;
     margin-top: 20px;
 }
 
-form > section div,
+.numeros div,
 form > div {
     display: flex;
     flex-direction: column;
@@ -174,10 +178,6 @@ form > div {
     margin-top: 20px;
 }
 
-form > div label {
-    margin-bottom: 9px;
-}
-
 form > button {
     width: 100%;
     height: 48px;
@@ -207,6 +207,19 @@ form > button:hover {
         padding: 15px 18px 30px;
     }
 
+    header {
+        height: 80px;
+    }
+
+    header img {
+        width: 45px;
+        height: 45px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
     form {
         padding: 30px 20px;
     }
@@ -215,16 +228,11 @@ form > button:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    form > section {
+    .numeros {
         grid-template-columns: 1fr;
     }
 
-    main > section:first-of-type h2 {
+    .bienvenida h2 {
         font-size: 24px;
-    }
-
-    header img {
-        width: 38px;
-        height: 38px;
     }
 }
