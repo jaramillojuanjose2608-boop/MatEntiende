@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mat Entiende</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <header>
+        <button type="button" aria-label="Volver">
+            ←
+        </button>
+
+        <h1>Mat Entiende</h1>
+
+        <img src="img/logo.png" alt="Logo de Mat Entiende" width="45">
+    </header>
+
     <main>
 
-        <header>
-            <img src="img/logomat.png" alt="Logo de Mat Entiende">
-            <h1>Mat Entiende</h1>
-        </header>
-
-        <section class="bienvenida">
-            <h2>Hola Juan, ¿Como estas?.</h2>
-            <p>¿Qué vamos a resolver hoy?</p>
+        <section>
+            <h2>Hola Mateo.</h2>
+            <p>¿qué vamos a resolver hoy?</p>
         </section>
 
         <form action="#" method="post">
@@ -27,33 +31,29 @@
             <fieldset>
                 <legend>Tipo de operación</legend>
 
-                <input type="radio" id="suma" name="operacion" value="suma">
-                <label for="suma" class="operacion">
+                <button type="button" name="operacion" value="suma">
                     <span>＋</span>
                     <span>Suma</span>
-                </label>
+                </button>
 
-                <input type="radio" id="resta" name="operacion" value="resta">
-                <label for="resta" class="operacion">
+                <button type="button" name="operacion" value="resta">
                     <span>−</span>
                     <span>Resta</span>
-                </label>
+                </button>
 
-                <input type="radio" id="multiplicacion" name="operacion" value="multiplicacion">
-                <label for="multiplicacion" class="operacion">
+                <button type="button" name="operacion" value="multiplicacion">
                     <span>×</span>
                     <span>Multiplicación</span>
-                </label>
+                </button>
 
-                <input type="radio" id="division" name="operacion" value="division">
-                <label for="division" class="operacion">
-                    <span>÷</span>
+                <button type="button" name="operacion" value="division">
+                    <span>％</span>
                     <span>División</span>
-                </label>
+                </button>
 
             </fieldset>
 
-            <section class="numeros">
+            <section>
 
                 <div>
                     <label for="numero1">Número 1</label>
@@ -86,7 +86,6 @@
                     type="date"
                     id="fecha"
                     name="fecha"
-                    value="2026-09-15"
                 >
             </div>
 
