@@ -1,261 +1,180 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background: #20242c;
+    background-color: #f5f3ff;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 18px;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background-image: radial-gradient(#555 1px, transparent 1px);
-    background-size: 18px 18px;
-    opacity: 0.35;
-    z-index: -1;
-}
-
-main {
-    width: 100%;
-    max-width: 620px;
-    min-height: 830px;
-    background: #f8f9fb;
-    border: 9px solid #9da4ae;
-    border-radius: 32px;
-    padding: 18px 25px 45px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #252044;
 }
 
 header {
     width: 100%;
-    height: 90px;
-    background: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 11px;
+    height: 75px;
+    background-color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 1px solid #e5e1f5;
 }
 
-header img {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-    margin-right: 12px;
+header button {
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #252044;
 }
 
 header h1 {
-    color: #4652d9;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 25px;
+    color: #6c4ce8;
 }
 
-.bienvenida {
+header img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+main > section {
     text-align: center;
-    margin-top: 35px;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
 }
 
-.bienvenida h2 {
-    color: #4652d9;
-    font-size: 27px;
-    margin-bottom: 10px;
+main > section h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
 }
 
-.bienvenida p {
-    color: #202020;
-    font-size: 15px;
+main > section p {
+    font-size: 18px;
+    color: #77728c;
 }
 
 form {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 11px;
-    padding: 40px 38px 36px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(60, 45, 120, 0.08);
 }
 
 fieldset {
     border: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 9px;
+    margin-bottom: 30px;
 }
 
 legend {
-    grid-column: 1 / -1;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
-    color: #111111;
+    margin-bottom: 15px;
 }
 
-fieldset input[type="radio"] {
-    display: none;
-}
-
-.operacion {
-    height: 57px;
-    border: 1px solid #c6c7d9;
-    border-radius: 6px;
-    background: white;
-    color: #29293a;
+fieldset button {
+    border: 2px solid #e3def7;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-right: 10px;
     cursor: pointer;
+    font-size: 15px;
+    color: #252044;
+    transition: 0.2s;
+}
+
+fieldset button span:first-child {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+fieldset button:hover {
+    background-color: #f0ebff;
+    border-color: #6c4ce8;
+}
+
+form > section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    transition: 0.3s;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
-.operacion:hover {
-    background: #5c5ee8;
-    border-color: #5c5ee8;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 12px rgba(92, 94, 232, 0.25);
-}
-
-fieldset input[type="radio"]:checked + .operacion {
-    background: #4652d9;
-    border-color: #4652d9;
-    color: white;
-    box-shadow: 0 5px 12px rgba(70, 82, 217, 0.3);
-}
-
-.operacion span:first-child {
-    font-size: 21px;
-    line-height: 18px;
-}
-
-.operacion span:last-child {
-    font-size: 10px;
-}
-
-.numeros {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 19px;
-    margin-top: 20px;
-}
-
-.numeros div,
-form > div {
-    display: flex;
-    flex-direction: column;
+form > section div {
+    width: 50%;
 }
 
 label {
-    color: #111111;
-    font-size: 12px;
+    display: block;
+    font-size: 15px;
     font-weight: bold;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
-input[type="number"],
-input[type="date"] {
+input {
     width: 100%;
-    height: 60px;
-    border: 1px solid #d7d7d7;
-    border-radius: 7px;
-    background: #ffffff;
-    padding: 10px 15px;
+    height: 50px;
+    border: 2px solid #e3def7;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 16px;
     outline: none;
 }
 
-input[type="number"] {
-    text-align: center;
-    font-size: 31px;
-    font-weight: bold;
-    color: #777777;
-}
-
-input[type="number"]:focus {
-    border-color: #5c5ee8;
-    box-shadow: 0 0 0 2px rgba(92, 94, 232, 0.15);
-}
-
-input[type="date"] {
-    font-size: 13px;
-    color: #333333;
-    margin-bottom: 28px;
-}
-
-form > div {
-    margin-top: 20px;
+input:focus {
+    border-color: #6c4ce8;
 }
 
 form > button {
     width: 100%;
-    height: 48px;
-    border: 2px solid white;
-    border-radius: 7px;
-    background: #b87500;
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+    background-color: #6c4ce8;
     color: white;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 0 1px #4d82ff;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 form > button:hover {
-    background: #9f6600;
-    transform: translateY(-2px);
+    background-color: #5638c9;
 }
 
 @media (max-width: 600px) {
 
-    body {
-        padding: 0;
+    header {
+        padding: 0 20px;
     }
 
     main {
-        min-height: 100vh;
-        border-radius: 0;
-        border-width: 6px;
-        padding: 15px 18px 30px;
-    }
-
-    header {
-        height: 80px;
-    }
-
-    header img {
-        width: 45px;
-        height: 45px;
-    }
-
-    header h1 {
-        font-size: 20px;
+        width: 94%;
+        margin: 25px auto;
     }
 
     form {
-        padding: 30px 20px;
+        padding: 20px;
     }
 
-    fieldset {
-        grid-template-columns: repeat(2, 1fr);
+    fieldset button {
+        width: 100%;
+        margin: 5px 0;
     }
 
-    .numeros {
-        grid-template-columns: 1fr;
+    form > section {
+        flex-direction: column;
     }
 
-    .bienvenida h2 {
-        font-size: 24px;
+    form > section div {
+        width: 100%;
     }
 }
