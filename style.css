@@ -80,8 +80,14 @@ fieldset {
 legend {
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     color: #17142a;
+}
+
+.indicacion {
+    font-size: 13px;
+    color: #777386;
+    margin-bottom: 15px;
 }
 
 fieldset button {

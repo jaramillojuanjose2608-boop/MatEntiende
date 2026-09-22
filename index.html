@@ -11,6 +11,7 @@
 <body>
 
     <header>
+
         <button type="button" aria-label="Volver">
             ←
         </button>
@@ -18,19 +19,28 @@
         <h1>Mat Entiende</h1>
 
         <img src="img/logo-mat-entiende.png" alt="Logo de Mat Entiende">
+
     </header>
 
     <main>
 
         <section class="saludo">
+
             <h2>Hola Mateo.</h2>
+
             <p>¿qué vamos a resolver hoy?</p>
+
         </section>
 
         <form>
 
             <fieldset>
+
                 <legend>Tipo de operación</legend>
+
+                <p class="indicacion">
+                    Selecciona una operación e ingresa los números para comenzar.
+                </p>
 
                 <button type="button" name="operacion" value="suma">
                     <span>＋</span>
@@ -57,13 +67,29 @@
             <section class="numeros">
 
                 <div>
+
                     <label for="numero1">Número 1</label>
-                    <input type="number" id="numero1" name="numero1">
+
+                    <input
+                        type="number"
+                        id="numero1"
+                        name="numero1"
+                        placeholder="0"
+                    >
+
                 </div>
 
                 <div>
+
                     <label for="numero2">Número 2</label>
-                    <input type="number" id="numero2" name="numero2">
+
+                    <input
+                        type="number"
+                        id="numero2"
+                        name="numero2"
+                        placeholder="0"
+                    >
+
                 </div>
 
             </section>
