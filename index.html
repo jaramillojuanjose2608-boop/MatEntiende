@@ -19,8 +19,8 @@
         <div class="formulario">
 
             <div class="opciones">
-                <button type="button" onclick="mostrarInicio()">Iniciar sesión</button>
-                <button type="button" onclick="mostrarRegistro()">Crear cuenta</button>
+                <a href="#inicioSesion">Iniciar sesión</a>
+                <a href="#registro">Crear cuenta</a>
             </div>
 
             <h1>Iniciar sesión</h1>
@@ -39,22 +39,22 @@
                     <input type="password" placeholder="Contraseña">
                 </div>
 
-                <button type="button" class="boton-principal" onclick="mostrarEjercicio()">
+                <a href="#ejercicio" class="boton-principal">
                     Iniciar sesión ➜
-                </button>
+                </a>
 
             </form>
 
-            <button type="button" class="enlace" onclick="mostrarRegistro()">
+            <a href="#registro" class="enlace">
                 ¿No tienes cuenta? Regístrate gratis
-            </button>
+            </a>
 
         </div>
 
     </section>
 
 
-    <section id="registro" class="pantalla oculto">
+    <section id="registro" class="pantalla">
 
         <div class="logo">
             <img src="img/logo-mat-entiende.png" alt="Logo Mat Entiende">
@@ -63,8 +63,8 @@
         <div class="formulario">
 
             <div class="opciones">
-                <button type="button" onclick="mostrarInicio()">Iniciar sesión</button>
-                <button type="button" onclick="mostrarRegistro()">Crear cuenta</button>
+                <a href="#inicioSesion">Iniciar sesión</a>
+                <a href="#registro">Crear cuenta</a>
             </div>
 
             <h1>Crear cuenta</h1>
@@ -93,28 +93,28 @@
                     <input type="password" placeholder="Contraseña">
                 </div>
 
-                <button type="button" class="boton-principal" onclick="mostrarInicio()">
+                <a href="#inicioSesion" class="boton-principal">
                     Registrarse ♣
-                </button>
+                </a>
 
             </form>
 
-            <button type="button" class="enlace" onclick="mostrarInicio()">
+            <a href="#inicioSesion" class="enlace">
                 ¿Ya tienes cuenta? Inicia sesión
-            </button>
+            </a>
 
         </div>
 
     </section>
 
 
-    <section id="ejercicio" class="pantalla oculto">
+    <section id="ejercicio" class="pantalla">
 
         <header>
 
-            <button type="button" aria-label="Volver">
+            <a href="#inicioSesion" class="volver">
                 ←
-            </button>
+            </a>
 
             <h1>Mat Entiende</h1>
 
@@ -203,9 +203,6 @@
         </main>
 
     </section>
-
-
-    <script src="./script.js"></script>
 
 </body>
 
