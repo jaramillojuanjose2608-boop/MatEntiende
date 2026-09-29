@@ -307,19 +307,15 @@ legend {
     margin-bottom: 30px;
 }
 
-.numeros div {
+.numeros label {
     width: 50%;
-}
-
-#ejercicio label:not(.operador) {
     display: block;
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 8px;
     color: #17142a;
 }
 
-#ejercicio input[type="number"] {
+.numeros input {
     width: 100%;
     height: 55px;
     border: 1px solid #d7d5df;
@@ -329,9 +325,10 @@ legend {
     text-align: center;
     outline: none;
     color: #666274;
+    margin-top: 8px;
 }
 
-#ejercicio input[type="number"]:focus {
+.numeros input:focus {
     border-color: #5d58e8;
 }
 
@@ -389,7 +386,7 @@ legend {
         flex-direction: column;
     }
 
-    .numeros div {
+    .numeros label {
         width: 100%;
     }
 }

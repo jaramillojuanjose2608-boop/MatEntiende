@@ -12,16 +12,16 @@
 
     <section id="inicioSesion" class="pantalla">
 
-        <div class="logo">
+        <header class="logo">
             <img src="img/logo-mat-entiende.png" alt="Logo Mat Entiende">
-        </div>
+        </header>
 
-        <div class="formulario">
+        <main class="formulario">
 
-            <div class="opciones">
+            <nav class="opciones">
                 <a href="#inicioSesion">Iniciar sesión</a>
                 <a href="#registro">Crear cuenta</a>
-            </div>
+            </nav>
 
             <h1>Iniciar sesión</h1>
 
@@ -29,15 +29,15 @@
 
             <form>
 
-                <div class="campo">
+                <label class="campo">
                     <span>✉</span>
                     <input type="email" placeholder="Correo electrónico">
-                </div>
+                </label>
 
-                <div class="campo">
+                <label class="campo">
                     <span>🔒</span>
                     <input type="password" placeholder="Contraseña">
-                </div>
+                </label>
 
                 <a href="#ejercicio" class="boton-principal">
                     Iniciar sesión ➜
@@ -49,23 +49,23 @@
                 ¿No tienes cuenta? Regístrate gratis
             </a>
 
-        </div>
+        </main>
 
     </section>
 
 
     <section id="registro" class="pantalla">
 
-        <div class="logo">
+        <header class="logo">
             <img src="img/logo-mat-entiende.png" alt="Logo Mat Entiende">
-        </div>
+        </header>
 
-        <div class="formulario">
+        <main class="formulario">
 
-            <div class="opciones">
+            <nav class="opciones">
                 <a href="#inicioSesion">Iniciar sesión</a>
                 <a href="#registro">Crear cuenta</a>
-            </div>
+            </nav>
 
             <h1>Crear cuenta</h1>
 
@@ -73,25 +73,25 @@
 
             <form>
 
-                <div class="campo">
+                <label class="campo">
                     <span>♟</span>
                     <input type="text" placeholder="Nombre completo">
-                </div>
+                </label>
 
-                <div class="campo">
+                <label class="campo">
                     <span>✉</span>
                     <input type="email" placeholder="Correo electrónico">
-                </div>
+                </label>
 
-                <div class="campo">
+                <label class="campo">
                     <span>☎</span>
                     <input type="tel" placeholder="Teléfono">
-                </div>
+                </label>
 
-                <div class="campo">
+                <label class="campo">
                     <span>🔒</span>
                     <input type="password" placeholder="Contraseña">
-                </div>
+                </label>
 
                 <a href="#inicioSesion" class="boton-principal">
                     Registrarse ♣
@@ -103,7 +103,7 @@
                 ¿Ya tienes cuenta? Inicia sesión
             </a>
 
-        </div>
+        </main>
 
     </section>
 
@@ -170,31 +170,23 @@
 
                 <section class="numeros">
 
-                    <div>
-
-                        <label for="numero1">Número 1</label>
-
+                    <label>
+                        Número 1
                         <input
                             type="number"
-                            id="numero1"
                             name="numero1"
                             placeholder="0"
                         >
+                    </label>
 
-                    </div>
-
-                    <div>
-
-                        <label for="numero2">Número 2</label>
-
+                    <label>
+                        Número 2
                         <input
                             type="number"
-                            id="numero2"
                             name="numero2"
                             placeholder="0"
                         >
-
-                    </div>
+                    </label>
 
                 </section>
 
