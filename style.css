@@ -11,7 +11,172 @@ body {
     min-height: 100vh;
 }
 
-header {
+.pantalla {
+    min-height: 100vh;
+}
+
+.oculto {
+    display: none;
+}
+
+#inicioSesion,
+#registro {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+}
+
+.imagen-matematicas {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.imagen-matematicas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.formulario {
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.opciones {
+    display: flex;
+    width: 100%;
+    background-color: #eeeeef;
+    border-radius: 5px;
+    padding: 2px;
+    margin-bottom: 18px;
+}
+
+.opciones button {
+    width: 50%;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #252044;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.opciones button:hover {
+    background-color: white;
+}
+
+.formulario h1 {
+    text-align: center;
+    font-size: 22px;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.formulario > p {
+    text-align: center;
+    font-size: 13px;
+    color: #666274;
+    margin-bottom: 20px;
+}
+
+.campo {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #c9c5dc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 12px;
+    background-color: white;
+}
+
+.campo span {
+    color: #4d46d8;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.campo input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #3f3b50;
+    background-color: transparent;
+}
+
+.campo input::placeholder {
+    color: #777386;
+}
+
+.campo:focus-within {
+    border-color: #4d46d8;
+}
+
+.boton-principal {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4d46d8;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.boton-principal:hover {
+    background-color: #3932bd;
+}
+
+.enlace {
+    display: block;
+    margin: 18px auto 0;
+    border: none;
+    background-color: transparent;
+    color: #4d46d8;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.enlace:hover {
+    text-decoration: underline;
+}
+
+#ejercicio {
+    background-color: #f5f5f7;
+    color: #252044;
+    min-height: 100vh;
+}
+
+#ejercicio header {
     height: 75px;
     background-color: white;
     display: flex;
@@ -21,7 +186,7 @@ header {
     border-bottom: 1px solid #eeeeee;
 }
 
-header button {
+#ejercicio header button {
     width: 45px;
     height: 45px;
     border: 1px dashed #6c63ff;
@@ -32,18 +197,18 @@ header button {
     cursor: pointer;
 }
 
-header h1 {
+#ejercicio header h1 {
     color: #4d46d8;
     font-size: 20px;
 }
 
-header img {
+#ejercicio header img {
     width: 55px;
     height: 55px;
     object-fit: contain;
 }
 
-main {
+#ejercicio main {
     width: 90%;
     max-width: 850px;
     margin: 30px auto;
@@ -65,7 +230,7 @@ main {
     color: #4d4960;
 }
 
-form {
+#ejercicio form {
     background-color: white;
     padding: 35px;
     border-radius: 12px;
@@ -124,7 +289,7 @@ fieldset button span:first-child {
     width: 50%;
 }
 
-label {
+#ejercicio label {
     display: block;
     font-size: 14px;
     font-weight: bold;
@@ -132,7 +297,7 @@ label {
     color: #17142a;
 }
 
-input {
+#ejercicio input {
     width: 100%;
     height: 55px;
     border: 1px solid #d7d5df;
@@ -144,7 +309,7 @@ input {
     color: #666274;
 }
 
-input:focus {
+#ejercicio input:focus {
     border-color: #5d58e8;
 }
 
@@ -166,15 +331,31 @@ input:focus {
 
 @media (max-width: 600px) {
 
-    header {
+    #inicioSesion,
+    #registro {
+        max-width: 430px;
+        padding: 20px 15px;
+    }
+
+    .logo img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .imagen-matematicas {
+        width: 125px;
+        height: 125px;
+    }
+
+    #ejercicio header {
         padding: 0 15px;
     }
 
-    main {
+    #ejercicio main {
         width: 94%;
     }
 
-    form {
+    #ejercicio form {
         padding: 20px;
     }
 
