@@ -165,8 +165,6 @@ body {
 .enlace {
     display: block;
     margin: 18px auto 0;
-    border: none;
-    background-color: transparent;
     color: #4d46d8;
     font-size: 11px;
     cursor: pointer;
@@ -266,7 +264,7 @@ legend {
     margin-bottom: 15px;
 }
 
-fieldset button {
+.operador {
     width: 23%;
     height: 58px;
     background-color: white;
@@ -276,16 +274,29 @@ fieldset button {
     cursor: pointer;
     font-size: 13px;
     margin-right: 1%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-fieldset button:hover {
+.operador input {
+    display: none;
+}
+
+.operador:hover {
     background-color: #5d58e8;
     color: white;
     border-color: #5d58e8;
 }
 
-fieldset button span:first-child {
-    display: block;
+.operador:has(input:checked) {
+    background-color: #5d58e8;
+    color: white;
+    border-color: #5d58e8;
+}
+
+.operador span:first-of-type {
     font-size: 20px;
     margin-bottom: 3px;
 }
@@ -300,7 +311,7 @@ fieldset button span:first-child {
     width: 50%;
 }
 
-#ejercicio label {
+#ejercicio label:not(.operador) {
     display: block;
     font-size: 14px;
     font-weight: bold;
@@ -308,7 +319,7 @@ fieldset button span:first-child {
     color: #17142a;
 }
 
-#ejercicio input {
+#ejercicio input[type="number"] {
     width: 100%;
     height: 55px;
     border: 1px solid #d7d5df;
@@ -320,7 +331,7 @@ fieldset button span:first-child {
     color: #666274;
 }
 
-#ejercicio input:focus {
+#ejercicio input[type="number"]:focus {
     border-color: #5d58e8;
 }
 
@@ -369,7 +380,7 @@ fieldset button span:first-child {
         padding: 20px;
     }
 
-    fieldset button {
+    .operador {
         width: 48%;
         margin: 1%;
     }
