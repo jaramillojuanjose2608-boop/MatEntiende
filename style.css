@@ -36,6 +36,10 @@ body {
     display: block;
 }
 
+#solucion:target {
+    display: block;
+}
+
 .logo {
     text-align: center;
     padding-top: 30px;
@@ -176,13 +180,15 @@ body {
     text-decoration: underline;
 }
 
-#ejercicio {
+#ejercicio,
+#solucion {
     background-color: #f5f5f7;
     color: #252044;
     min-height: 100vh;
 }
 
-#ejercicio header {
+#ejercicio header,
+#solucion header {
     height: 75px;
     background-color: white;
     display: flex;
@@ -206,12 +212,14 @@ body {
     text-decoration: none;
 }
 
-#ejercicio header h1 {
+#ejercicio header h1,
+#solucion header h1 {
     color: #4d46d8;
     font-size: 20px;
 }
 
-#ejercicio header img {
+#ejercicio header img,
+#solucion header img {
     width: 55px;
     height: 55px;
     object-fit: contain;
@@ -342,10 +350,78 @@ legend {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .resolver:hover {
     background-color: #996300;
+}
+
+.resultado {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.resultado h2 {
+    text-align: center;
+    color: #4d46d8;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.operacion,
+.explicacion {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.titulo-resultado {
+    color: #777386;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.resultado-operacion {
+    color: #252044;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.numero-resultado {
+    color: #4d46d8;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.explicacion h3 {
+    color: #252044;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.explicacion p {
+    color: #666274;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.formula {
+    color: #4d46d8 !important;
+    font-size: 22px !important;
+    font-weight: bold;
+}
+
+.resultado .boton-principal {
+    margin-top: 20px;
 }
 
 @media (max-width: 600px) {
@@ -365,11 +441,13 @@ legend {
         height: 65px;
     }
 
-    #ejercicio header {
+    #ejercicio header,
+    #solucion header {
         padding: 0 15px;
     }
 
-    #ejercicio main {
+    #ejercicio main,
+    .resultado {
         width: 94%;
     }
 
@@ -388,5 +466,14 @@ legend {
 
     .numeros label {
         width: 100%;
+    }
+
+    .resultado {
+        margin-top: 30px;
+    }
+
+    .operacion,
+    .explicacion {
+        padding: 25px;
     }
 }
