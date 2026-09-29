@@ -24,25 +24,25 @@ body {
     width: 100%;
     max-width: 430px;
     margin: 0 auto;
-    padding: 25px 20px;
+    padding: 15px 20px;
     background-color: #f8f9fa;
 }
 
 .logo {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .logo img {
-    width: 85px;
-    height: 85px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 
 .imagen-matematicas {
     width: 130px;
     height: 130px;
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -334,17 +334,18 @@ fieldset button span:first-child {
     #inicioSesion,
     #registro {
         max-width: 430px;
-        padding: 20px 15px;
+        padding: 15px 15px;
     }
 
     .logo img {
-        width: 75px;
-        height: 75px;
+        width: 65px;
+        height: 65px;
     }
 
     .imagen-matematicas {
-        width: 125px;
-        height: 125px;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 18px;
     }
 
     #ejercicio header {
