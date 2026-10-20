@@ -24,24 +24,23 @@
             </nav>
 
             <h1>Iniciar sesión</h1>
-
             <p>Accede a tus clases y ejercicios</p>
 
-            <form>
+            <form id="formularioLogin">
 
                 <label class="campo">
                     <span>✉</span>
-                    <input type="email" placeholder="Correo electrónico">
+                    <input type="email" placeholder="Correo electrónico" required>
                 </label>
 
                 <label class="campo">
                     <span>🔒</span>
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" placeholder="Contraseña" required>
                 </label>
 
-                <a href="#ejercicio" class="boton-principal">
+                <button type="submit" class="boton-principal">
                     Iniciar sesión ➜
-                </a>
+                </button>
 
             </form>
 
@@ -68,34 +67,33 @@
             </nav>
 
             <h1>Crear cuenta</h1>
-
             <p>Únete a nuestra comunidad de aprendizaje</p>
 
-            <form>
+            <form id="formularioRegistro">
 
                 <label class="campo">
                     <span>♟</span>
-                    <input type="text" placeholder="Nombre completo">
+                    <input type="text" placeholder="Nombre completo" required>
                 </label>
 
                 <label class="campo">
                     <span>✉</span>
-                    <input type="email" placeholder="Correo electrónico">
+                    <input type="email" placeholder="Correo electrónico" required>
                 </label>
 
                 <label class="campo">
                     <span>☎</span>
-                    <input type="tel" placeholder="Teléfono">
+                    <input type="tel" placeholder="Teléfono" required>
                 </label>
 
                 <label class="campo">
                     <span>🔒</span>
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" placeholder="Contraseña" required>
                 </label>
 
-                <a href="#inicioSesion" class="boton-principal">
+                <button type="submit" class="boton-principal">
                     Registrarse
-                </a>
+                </button>
 
             </form>
 
@@ -112,9 +110,7 @@
 
         <header>
 
-            <a href="#inicioSesion" class="volver">
-                ←
-            </a>
+            <a href="#inicioSesion" class="volver">←</a>
 
             <h1>Mat Entiende</h1>
 
@@ -125,14 +121,11 @@
         <main>
 
             <section class="saludo">
-
                 <h2>Hola Mateo.</h2>
-
-                <p>¿qué vamos a resolver hoy?</p>
-
+                <p>¿Qué vamos a resolver hoy?</p>
             </section>
 
-            <form>
+            <form id="formularioEjercicio">
 
                 <fieldset>
 
@@ -143,7 +136,7 @@
                     </p>
 
                     <label class="operador">
-                        <input type="radio" name="operacion" value="suma">
+                        <input type="radio" name="operacion" value="suma" required>
                         <span>＋</span>
                         <span>Suma</span>
                     </label>
@@ -174,8 +167,11 @@
                         Número 1
                         <input
                             type="number"
+                            id="numero1"
                             name="numero1"
                             placeholder="0"
+                            step="any"
+                            required
                         >
                     </label>
 
@@ -183,32 +179,21 @@
                         Número 2
                         <input
                             type="number"
+                            id="numero2"
                             name="numero2"
                             placeholder="0"
+                            step="any"
+                            required
                         >
                     </label>
 
                 </section>
 
-                <nav class="opciones-solucion">
+                <button type="submit" class="resolver">
+                    Resolver ejercicio
+                </button>
 
-                    <a href="#solucionSuma" class="resolver">
-                        Resolver suma
-                    </a>
-
-                    <a href="#solucionResta" class="resolver">
-                        Resolver resta
-                    </a>
-
-                    <a href="#solucionMultiplicacion" class="resolver">
-                        Resolver multiplicación
-                    </a>
-
-                    <a href="#solucionDivision" class="resolver">
-                        Resolver división
-                    </a>
-
-                </nav>
+                <p id="mensajeError" role="alert"></p>
 
             </form>
 
@@ -220,15 +205,9 @@
     <section id="solucionSuma" class="pantalla">
 
         <header>
-
-            <a href="#ejercicio" class="volver">
-                ←
-            </a>
-
+            <a href="#ejercicio" class="volver">←</a>
             <h1>Mat Entiende</h1>
-
             <img src="img/logo-mat-entiende.png" alt="Logo de Mat Entiende">
-
         </header>
 
         <main class="resultado">
@@ -236,27 +215,14 @@
             <h2>Solución de suma</h2>
 
             <article class="operacion">
-
                 <p class="titulo-resultado">Operación</p>
-
-                <p class="resultado-operacion">
-                    2 + 2 = 4
-                </p>
-
+                <p class="resultado-operacion" id="operacionSuma">2 + 2 = 4</p>
             </article>
 
             <article class="explicacion">
-
                 <h3>Explicación</h3>
-
-                <p>
-                    Para sumar, juntamos los dos números.
-                </p>
-
-                <p class="formula">
-                    2 + 2 = 4
-                </p>
-
+                <p id="explicacionSuma">Para sumar, juntamos los dos números.</p>
+                <p class="formula" id="formulaSuma">2 + 2 = 4</p>
             </article>
 
             <a href="#ejercicio" class="boton-principal">
@@ -271,15 +237,9 @@
     <section id="solucionResta" class="pantalla">
 
         <header>
-
-            <a href="#ejercicio" class="volver">
-                ←
-            </a>
-
+            <a href="#ejercicio" class="volver">←</a>
             <h1>Mat Entiende</h1>
-
             <img src="img/logo-mat-entiende.png" alt="Logo de Mat Entiende">
-
         </header>
 
         <main class="resultado">
@@ -287,27 +247,14 @@
             <h2>Solución de resta</h2>
 
             <article class="operacion">
-
                 <p class="titulo-resultado">Operación</p>
-
-                <p class="resultado-operacion">
-                    5 − 2 = 3
-                </p>
-
+                <p class="resultado-operacion" id="operacionResta">5 - 2 = 3</p>
             </article>
 
             <article class="explicacion">
-
                 <h3>Explicación</h3>
-
-                <p>
-                    Para restar, quitamos el segundo número al primero.
-                </p>
-
-                <p class="formula">
-                    5 − 2 = 3
-                </p>
-
+                <p id="explicacionResta">Para restar, quitamos el segundo número al primero.</p>
+                <p class="formula" id="formulaResta">5 - 2 = 3</p>
             </article>
 
             <a href="#ejercicio" class="boton-principal">
@@ -322,15 +269,9 @@
     <section id="solucionMultiplicacion" class="pantalla">
 
         <header>
-
-            <a href="#ejercicio" class="volver">
-                ←
-            </a>
-
+            <a href="#ejercicio" class="volver">←</a>
             <h1>Mat Entiende</h1>
-
             <img src="img/logo-mat-entiende.png" alt="Logo de Mat Entiende">
-
         </header>
 
         <main class="resultado">
@@ -338,28 +279,16 @@
             <h2>Solución de multiplicación</h2>
 
             <article class="operacion">
-
                 <p class="titulo-resultado">Operación</p>
-
-                <p class="resultado-operacion">
-                    2 × 2 = 4
-                </p>
-
+                <p class="resultado-operacion" id="operacionMultiplicacion">2 × 2 = 4</p>
             </article>
 
             <article class="explicacion">
-
                 <h3>Explicación</h3>
-
-                <p>
-                    Para multiplicar, podemos sumar el primer número
-                    varias veces según indica el segundo número.
+                <p id="explicacionMultiplicacion">
+                    Para multiplicar, podemos sumar el primer número varias veces según indica el segundo número.
                 </p>
-
-                <p class="formula">
-                    2 + 2 = 4
-                </p>
-
+                <p class="formula" id="formulaMultiplicacion">2 + 2 = 4</p>
             </article>
 
             <a href="#ejercicio" class="boton-principal">
@@ -374,15 +303,9 @@
     <section id="solucionDivision" class="pantalla">
 
         <header>
-
-            <a href="#ejercicio" class="volver">
-                ←
-            </a>
-
+            <a href="#ejercicio" class="volver">←</a>
             <h1>Mat Entiende</h1>
-
             <img src="img/logo-mat-entiende.png" alt="Logo de Mat Entiende">
-
         </header>
 
         <main class="resultado">
@@ -390,28 +313,16 @@
             <h2>Solución de división</h2>
 
             <article class="operacion">
-
                 <p class="titulo-resultado">Operación</p>
-
-                <p class="resultado-operacion">
-                    8 ÷ 2 = 4
-                </p>
-
+                <p class="resultado-operacion" id="operacionDivision">8 ÷ 2 = 4</p>
             </article>
 
             <article class="explicacion">
-
                 <h3>Explicación</h3>
-
-                <p>
-                    Para dividir, repartimos el primer número
-                    en partes iguales según el segundo número.
+                <p id="explicacionDivision">
+                    Para dividir, repartimos el primer número en partes iguales según el segundo número.
                 </p>
-
-                <p class="formula">
-                    8 ÷ 2 = 4
-                </p>
-
+                <p class="formula" id="formulaDivision">8 ÷ 2 = 4</p>
             </article>
 
             <a href="#ejercicio" class="boton-principal">
@@ -421,6 +332,8 @@
         </main>
 
     </section>
+
+    <script src="./script.js"></script>
 
 </body>
 
